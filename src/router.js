@@ -1,34 +1,42 @@
 import  Vue from 'vue'
 import Router from 'vue-router'
+import MostFriends from '@/pages/MostFriends.vue'
+import MostFriendsDay from '@/pages/MostFriendsDay.vue'
+import MostFriendsWeek from '@/pages/MostFriendsWeek.vue'
+import MostProfitable from '@/pages/MostProfitable.vue'
+import PopularPaid from '@/pages/PopularPaid.vue'
 
 Vue.use(Router)
 
 export default new Router({
+
+
     mode: 'history',
-    routes:[
+    routes: [
         {
             path: '/',
-            component: () => import('@/pages/interesting.vue') 
+            component: () => import('./pages/Home.vue')
         },
         {
             path: '/most-friends',
-            component: () => import('./pages/Compilation1.vue')
+            component: MostFriends
         },
         {
             path: '/most-profitable',
-            component: () => import('./pages/Compilation2.vue')
+            component: MostProfitable
         },
         {
             path: '/popular-paid',
-            component: () => import('./pages/Compilation3.vue')
+            component: PopularPaid
+
         },
         {
             path: '/most-friends-day',
-            component: () => import('./pages/Compilation4.vue')
+            component: MostFriendsDay
         },
         {
             path: '/most-friends-week',
-            component: () => import('./pages/Compilation5.vue')
+            component: MostFriendsWeek
         }
     ]
 })

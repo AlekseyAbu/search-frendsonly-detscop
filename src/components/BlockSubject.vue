@@ -81,10 +81,11 @@ export default {
   margin: 0;
 }
 .content {
-  max-width: 1013px;
-  width: 1013px;
+  max-width: 940px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
 }
 </style>
