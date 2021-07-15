@@ -8,11 +8,7 @@
       <div class="content">
         <swiper>
         <swiper-slide>
-          <ContentBlock 
-            v-for="card of cards"
-            :key="card.id"
-            v-bind:card="card"
-        />
+          <ContentBlock v-for="card of cards" :key="card.id" v-bind:card="card"/>
         </swiper-slide>
       </swiper>
       </div>
@@ -21,8 +17,8 @@
 </template>
 
 <script>
-import ContentBlock from "@/components/ContentBlock.vue";
-import data from "@/data/data.json";
+import ContentBlock from "../components/ContentBlock.vue";
+import data from "../data/data.json";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.min.css";
 

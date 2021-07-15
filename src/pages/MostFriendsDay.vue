@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import blocks from "@/data/blocks.json";
-import Compilation from "@/components/Compilation.vue"
+import blocks from "../data/blocks.json"
+import Compilation from "../components/Compilation.vue"
 
 export default {
   components: {
